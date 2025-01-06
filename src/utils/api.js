@@ -27,3 +27,13 @@ export const getMessages = async (userId) => {
   const response = await fetch(`${API_URL}/messages/${userId}`);
   return await response.json();
 };
+
+export const getUsers = async () => {
+    const response = await fetch(`${API_URL}/users`, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${localStorage.getItem('token')}`,
+      },
+    });
+    return await response.json();
+  };

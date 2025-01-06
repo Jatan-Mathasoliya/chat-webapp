@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getUsers } from '../../utils/api.js';
+import { getUsers } from '../utils/api.js';
 import { Link } from 'react-router-dom';
 
 function UserList() {

@@ -1,5 +1,5 @@
 // src/utils/api.js
-const API_URL = 'https://chat-server-wgit.onrender.com/api';
+const API_URL = 'https://chat-server-wgit.onrender.com/api/auth';
 
 export const loginUser  = async ({ username, password }) => {
   const response = await fetch(`${API_URL}/login`, {
